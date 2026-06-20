@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teoría del Color y el Significado — Universidad ECCI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+<body>
+
+<!-- PROGRESO -->
+<div id="progress-bar"></div>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════ -->
+<header class="site-header">
+  <a href="#inicio" class="nav-logo">
+    Teoría <span>del Color</span>
+    <em>UNIVERSIDAD ECCI</em>
+  </a>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#inicio"      data-i18n="nav_inicio">Inicio</a></li>
+      <li><a href="#conferencia" data-i18n="nav_conferencia">Conferencias</a></li>
+      <li><a href="#temas"       data-i18n="nav_temas">Temas</a></li>
+      <li><a href="#galeria"     data-i18n="nav_galeria">Galería</a></li>
+      <li><a href="#glosario"    data-i18n="nav_glosario">Glosario</a></li>
+      <li><a href="#conclusion"  data-i18n="nav_conclusion">Conclusión</a></li>
+    </ul>
+  </nav>
+
+  <div class="lang-toggle">
+    <button class="lang-btn activo" data-lang="es" onclick="setLang('es')">ES</button>
+    <button class="lang-btn"        data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Drawer móvil -->
+<div class="nav-drawer" id="navDrawer">
+  <a href="#inicio"      data-i18n="nav_inicio">Inicio</a>
+  <a href="#conferencia" data-i18n="nav_conferencia">Conferencias</a>
+  <a href="#temas"       data-i18n="nav_temas">Temas</a>
+  <a href="#galeria"     data-i18n="nav_galeria">Galería</a>
+  <a href="#glosario"    data-i18n="nav_glosario">Glosario</a>
+  <a href="#conclusion"  data-i18n="nav_conclusion">Conclusión</a>
+  <div class="lang-toggle mt-3">
+    <button class="lang-btn activo" data-lang="es" onclick="setLang('es')">ES</button>
+    <button class="lang-btn"        data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero" id="inicio">
+  <div class="hero-band"></div>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1 class="animate-in d2">
+        <span data-i18n="hero_h1a">Teoría</span><br>
+        <strong data-i18n="hero_h1b">del Color</strong><br>
+        <em data-i18n="hero_h1c">y el Significado</em>
+      </h1>
+
+      <p class="hero-subtitle animate-in d3" data-i18n="hero_sub">
+        Evento de Moda — Color, Significado y Diseño de Productos — Universidad ECCI, Mayo 2026.
+      </p>
+    </div>
+
+    <div class="hero-visual animate-in d2">
+      <div class="hero-img-frame">
+        <img
+          src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=900&q=85"
+          alt="Evento Teoría del Color y el Significado — ECCI"
+        />
+        <div class="hero-tag">
+          <span data-i18n="hero_img_tag">ECCI Mayo 2026</span>
+        </div>
+      </div>
+      <div class="hero-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section id="acerca" class="bg2">
+  <p class="section-kicker observe" data-i18n="about_kicker">Acerca del evento</p>
+  <div class="section-divider observe"></div>
+  <h2 class="section-title observe" data-i18n="about_title">¿Qué es Teoría del Color y el Significado?</h2>
+  <p class="section-sub observe" data-i18n="about_sub">
+    Un evento de moda en la Universidad ECCI donde diseñadores, estudiantes y profesionales exploran cómo el color, el significado simbólico y la imagen construyen experiencias de marca y producto en la industria de la moda.
+  </p>
+
+  <div class="about-grid observe">
+    <div class="about-card">
+      <div class="about-icon">🎨</div>
+      <h4 data-i18n="ac1_title">2 Conferencias</h4>
+      <p data-i18n="ac1_desc">Color y Significado, y Puestos de Moda del evento</p>
+    </div>
+    <div class="about-card">
+      <div class="about-icon">📖</div>
+      <h4 data-i18n="ac2_title">30 Términos</h4>
+      <p data-i18n="ac2_desc">Glosario técnico de diseño bilingüe</p>
+    </div>
+    <div class="about-card">
+      <div class="about-icon">✂️</div>
+      <h4 data-i18n="ac3_title">Experiencias</h4>
+      <p data-i18n="ac3_desc">Talleres, pasarela y puestos de moda en vivo</p>
+    </div>
+    <div class="about-card">
+      <div class="about-icon">🏛️</div>
+      <h4 data-i18n="ac4_title">Universidad ECCI</h4>
+      <p data-i18n="ac4_desc">Bogotá, Colombia — Mayo 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GALERÍA INLINE 1 ══ -->
+<div class="galeria-inline cols-3 observe">
+  <img src="/IMG/moda.png" alt="Moda ECCI" style="height:220px;"
+    data-lb-src="/IMG/moda.png" data-lb-cap="Moda ECCI" />
+  <img src="/IMG/puestoModa.png" alt="Puestos de Moda" style="height:220px;"
+    data-lb-src="/IMG/puestoModa.png" data-lb-cap="Puestos de Moda" />
+  <img src="/IMG/experiencia.png" alt="Diseño Visual" style="height:220px;"
+    data-lb-src="/IMG/experiencia.png" data-lb-cap="Diseño Visual" />
+</div>
+
+<!-- ══════════════════════════════════════════
+     TEMAS
+══════════════════════════════════════════ -->
+<section id="temas">
+  <p class="section-kicker observe" data-i18n="temas_kicker">Ejes temáticos</p>
+  <div class="section-divider observe"></div>
+  <h2 class="section-title observe" data-i18n="temas_title">Temas Principales</h2>
+  <p class="section-sub observe" data-i18n="temas_sub">Los pilares que guían la exploración del color, el significado y los puestos de moda en el contexto del evento de la Universidad ECCI.</p>
+
+  <div class="topics-grid observe">
+    <a href="#conf1" class="topic-card">
+      <h3 data-i18n="t1_title">Teoría del Color y el Significado</h3>
+      <p data-i18n="t1_desc">Cómo la psicología del color y su significado influyen en la comunicación visual, la percepción de las personas y la efectividad del mensaje en diseño gráfico, publicidad y marketing.</p>
+      <div class="tags">
+        <span class="tag" data-i18n="tag_color">Color</span>
+        <span class="tag" data-i18n="tag_ux">Significado</span>
+        <span class="tag rosa" data-i18n="tag_acc">Simbolismo</span>
+      </div>
+    </a>
+
+    <a href="#conf2" class="topic-card">
+      <h3 data-i18n="t2_title">Puestos de Moda del Evento</h3>
+      <p data-i18n="t2_desc">Aplicación de la teoría del color en prendas y colecciones: combinaciones cromáticas, imagen personal, armonía visual y tendencias de la industria de la moda.</p>
+      <div class="tags">
+        <span class="tag" data-i18n="tag_foto">Puestos</span>
+        <span class="tag rosa" data-i18n="tag_moda">Moda</span>
+        <span class="tag" data-i18n="tag_visual">Diseño Visual</span>
+      </div>
+    </a>
+
+    <a href="#glosario" class="topic-card">
+      <h3 style="color:var(--morado)" data-i18n="t3_title">Glosario de Diseño</h3>
+      <p data-i18n="t3_desc">30 términos técnicos en inglés con traducción y definición aplicada al color, el significado y la producción de moda.</p>
+      <div class="tags">
+        <span class="tag" data-i18n="tag_terminos">30 términos</span>
+        <span class="tag rosa" data-i18n="tag_bilingue">Bilingüe</span>
+      </div>
+    </a>
+
+    <a href="#conclusion" class="topic-card">
+      <h3 style="color:var(--morado)" data-i18n="t4_title">Ética & Diseño Responsable</h3>
+      <p data-i18n="t4_desc">Reflexión sobre accesibilidad, diversidad cromática y responsabilidad del diseñador frente a audiencias diversas.</p>
+      <div class="tags">
+        <span class="tag" data-i18n="tag_etica">Ética</span>
+        <span class="tag rosa" data-i18n="tag_soc">Sociedad</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ══ GALERÍA INLINE 2 ══ -->
+<div class="galeria-inline cols-4 observe">
+  <img src="/IMG/circulo_cromatico.png" alt="" style="height:170px;"
+    data-lb-src="/IMG/circulo_cromatico.png" data-lb-cap="Círculo Cromático" />
+  <img src="/IMG/significado.png" alt="" style="height:170px;"
+    data-lb-src="/IMG/significado.png" data-lb-cap="Significado del Color" />
+  <img src="/IMG/puestoModa.png" alt="" style="height:170px;"
+    data-lb-src="/IMG/puestoModa.png" data-lb-cap="Puesto de Moda" />
+  <img src="/IMG/combinacion.jpeg" alt="" style="height:170px;"
+    data-lb-src="/IMG/combinacion.jpeg" data-lb-cap="Combinación de Color" />
+</div>
+
+<!-- ══════════════════════════════════════════
+     CONFERENCIAS
+══════════════════════════════════════════ -->
+<section id="conferencia" class="bg2">
+  <p class="section-kicker observe" data-i18n="conf_kicker">Programa académico</p>
+  <div class="section-divider observe"></div>
+  <h2 class="section-title observe" data-i18n="conf_title">Conferencias</h2>
+  <p class="section-sub observe" data-i18n="conf_sub">Ponencias seleccionadas del evento Teoría del Color y el Significado — Universidad ECCI, Mayo 2026.</p>
+
+  <!-- ── CONF 1 ── -->
+  <div class="conf-card observe" id="conf1">
+    <div class="conf-header">
+      <div class="conf-num" data-i18n="c1_num">01</div>
+      <div class="conf-meta">
+        <h2 data-i18n="c1_title">Teoría del Color: Significado e Impacto en la Comunicación Visual</h2>
+        <p class="conf-speaker" data-i18n="c1_speaker">Conferencia · Universidad ECCI · Mayo 2026</p>
+        <div class="tags">
+          <span class="tag">Teoría del color</span>
+          <span class="tag">Significado</span>
+          <span class="tag rosa">Psicología del color</span>
+          <span class="tag rosa">Comunicación visual</span>
+          <span class="tag">Diseño gráfico</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="conf-body">
+      <h4 data-i18n="c1_kw_lbl" style="margin-top:0">Tema Principal</h4>
+      <p data-i18n="c1_main">Exploración del significado simbólico y psicológico del color aplicado al diseño de marca, moda y experiencias visuales.</p>
+
+      <!-- Mini galería conf 1 -->
+      <div class="galeria-inline cols-3" style="margin:1.5rem 0;">
+        <img src="/IMG/circulo_cromatico.png" alt="Círculo Cromático" style="height:130px;"
+          data-lb-src="/IMG/circulo_cromatico.png" data-lb-cap="Círculo Cromático" />
+        <img src="/IMG/significado.png" alt="Significado" style="height:130px;"
+          data-lb-src="/IMG/significado.png" data-lb-cap="Significado del Color" />
+        <img src="/IMG/contraste01.png" alt="Contraste" style="height:130px;"
+          data-lb-src="/IMG/contraste01.png" data-lb-cap="Contraste y Percepción" />
+      </div>
+
+      <div class="content-tabs">
+        <button class="content-tab activo" data-target="c1-es" data-i18n="c1_tab_es">🇨🇴 Español</button>
+        <button class="content-tab"        data-target="c1-en" data-i18n="c1_tab_en">🇺🇸 English</button>
+      </div>
+
+      <div class="lang-content activo" data-lang="c1-es">
+        <h4 data-i18n="c1_res_lbl">Resumen</h4>
+        <p data-i18n="c1_res_es">En mayo de 2026, en la Universidad ECCI, se realizó una conferencia sobre la teoría del color y su significado, enfocada en la importancia de los colores dentro de la comunicación visual. Durante el evento se explicó cómo los colores pueden transmitir emociones, influir en la percepción de las personas y fortalecer la efectividad de un mensaje en diferentes contextos.</p>
+        <p data-i18n="c1_res_es2">Asimismo, se abordaron los significados asociados a diversos colores y su aplicación en áreas como el diseño gráfico, la publicidad y el marketing. Los asistentes comprendieron cómo la correcta selección de colores contribuye a crear identidades visuales sólidas y a generar una conexión más efectiva con el público objetivo.</p>
+        <h4 data-i18n="c1_ref_lbl">Reflexión</h4>
+        <p data-i18n="c1_ref_es">La conferencia permitió reconocer que los colores son una herramienta fundamental para comunicar ideas y emociones. Comprender la teoría del color ayuda a desarrollar proyectos visuales más estratégicos, creativos y capaces de transmitir mensajes claros e impactantes.</p>
+      </div>
+
+      <div class="lang-content" data-lang="c1-en">
+        <h4 data-i18n="c1_res_lbl">Summary</h4>
+        <p data-i18n="c1_res_en">In May 2026, at Universidad ECCI, a conference was held on color theory and its meaning, focused on the importance of color within visual communication. During the event, attendees learned how colors can convey emotions, influence people's perception and strengthen the effectiveness of a message in different contexts.</p>
+        <p data-i18n="c1_res_en2">The talk also covered the meanings associated with different colors and their application in fields such as graphic design, advertising and marketing. Attendees understood how the correct selection of colors helps build strong visual identities and create a more effective connection with the target audience.</p>
+        <h4 data-i18n="c1_ref_lbl">Reflection</h4>
+        <p data-i18n="c1_ref_en">The conference made it clear that colors are a fundamental tool for communicating ideas and emotions. Understanding color theory helps develop visual projects that are more strategic, creative and capable of conveying clear, impactful messages.</p>
+      </div>
+
+      <h4 data-i18n="c1_kw_lbl" style="margin-top:2rem">Palabras Clave / Keywords</h4>
+      <div class="kw-cloud">
+        <span class="tag">Teoría del color</span>
+        <span class="tag">Significado</span>
+        <span class="tag rosa">Psicología del color</span>
+        <span class="tag">Comunicación visual</span>
+        <span class="tag">Diseño gráfico</span>
+        <span class="tag rosa">Creatividad</span>
+        <span class="tag">Emociones</span>
+        <span class="tag">Percepción</span>
+        <span class="tag">Identidad visual</span>
+        <span class="tag rosa">Marketing visual</span>
+      </div>
+
+      <h4 style="margin-top:2rem" data-i18n="c1_mm_lbl">Contenido Multimedia</h4>
+      <div class="media-grid">
+        <video width="300" controls>
+          <source src="https://res.cloudinary.com/dezhaypij/video/upload/v1781921240/pregunta_onemrx.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ GALERÍA INLINE 3 — entre conferencias ══ -->
+  <div class="galeria-inline cols-3 observe" style="margin:2rem 0;">
+    <img src="/IMG/armonia_color.png" alt="" style="height:190px;"
+      data-lb-src="/IMG/armonia_color.png" data-lb-cap="Armonía de Color" />
+    <img src="/IMG/lenguaje_color.png" alt="" style="height:190px;"
+      data-lb-src="/IMG/lenguaje_color.png" data-lb-cap="Lenguaje del Color" />
+    <img src="/IMG/creative_color.png" alt="" style="height:190px;"
+      data-lb-src="/IMG/creative_color.png" data-lb-cap="Color Creativo" />
+  </div>
+
+  <!-- ── CONF 2 ── -->
+  <div class="conf-card observe" id="conf2">
+    <div class="conf-header">
+      <div class="conf-num" data-i18n="c2_num">02</div>
+      <div class="conf-meta">
+        <h2 data-i18n="c2_title">Puestos de Moda: Aplicación de la Teoría del Color en la Vestimenta</h2>
+        <p class="conf-speaker" data-i18n="c2_speaker">Conferencia y Exposición · Universidad ECCI · Mayo 2026</p>
+        <div class="tags">
+          <span class="tag">Moda</span>
+          <span class="tag rosa">Teoría del color</span>
+          <span class="tag">Vestimenta</span>
+          <span class="tag rosa">Diseño</span>
+          <span class="tag">Combinación cromática</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="conf-body">
+      <h4 style="margin-top:0">Tema Principal / Main Topic</h4>
+      <p data-i18n="c2_main">Aplicación de los principios de la teoría del color en prendas y colecciones de moda: combinaciones cromáticas, imagen personal, armonía visual y tendencias de la industria.</p>
+
+      <!-- Mini galería conf 2 -->
+      <div class="galeria-inline cols-3" style="margin:1.5rem 0;">
+        <img src="/IMG/puestoModa.png" alt="Puesto de Moda" style="height:130px;"
+          data-lb-src="/IMG/puestoModa.png" data-lb-cap="Puesto de Moda" />
+        <img src="/IMG/moda.png" alt="Moda" style="height:130px;"
+          data-lb-src="/IMG/moda.png" data-lb-cap="Moda ECCI" />
+        <img src="/IMG/tinte.png" alt="Color de Telas" style="height:130px;"
+          data-lb-src="/IMG/tinte.png" data-lb-cap="Tinte y Color de Telas" />
+      </div>
+
+      <div class="content-tabs">
+        <button class="content-tab activo" data-target="c2-es">🇨🇴 Español</button>
+        <button class="content-tab"        data-target="c2-en">🇺🇸 English</button>
+      </div>
+
+      <div class="lang-content activo" data-lang="c2-es">
+        <h4>Resumen</h4>
+        <p data-i18n="c2_res_es">Durante la conferencia y exposición de puestos de moda, los asistentes tuvieron la oportunidad de observar diferentes prendas y colecciones que aplicaban los principios de la teoría del color. A través de diversas combinaciones cromáticas, se mostró cómo los colores pueden influir en la imagen personal, transmitir estilos específicos y generar diferentes percepciones en quienes observan una prenda.</p>
+        <p data-i18n="c2_res_es2">Además, se explicó la importancia de seleccionar colores adecuados en el diseño de moda para resaltar características, expresar personalidad y crear armonía visual. Los expositores demostraron cómo la teoría del color se utiliza en la industria de la moda para diseñar colecciones atractivas, innovadoras y acordes con las tendencias actuales.</p>
+        <h4>Reflexión</h4>
+        <p data-i18n="c2_ref_es">Esta experiencia permitió comprender que la teoría del color no solo se aplica al diseño gráfico o la publicidad, sino también a la moda. Los colores tienen un papel fundamental en la forma en que las personas expresan su identidad y comunican emociones a través de la vestimenta, convirtiéndose en una herramienta clave para el diseño y la creatividad.</p>
+      </div>
+
+      <div class="lang-content" data-lang="c2-en">
+        <h4>Summary</h4>
+        <p data-i18n="c2_res_en">During the conference and fashion stall exhibition, attendees had the opportunity to observe different garments and collections that applied the principles of color theory. Through various chromatic combinations, it was shown how colors can influence personal image, convey specific styles and generate different perceptions in those who observe a garment.</p>
+        <p data-i18n="c2_res_en2">The importance of selecting appropriate colors in fashion design was also explained, to highlight characteristics, express personality and create visual harmony. The exhibitors demonstrated how color theory is used in the fashion industry to design attractive, innovative collections that align with current trends.</p>
+        <h4>Reflection</h4>
+        <p data-i18n="c2_ref_en">This experience made it clear that color theory applies not only to graphic design or advertising, but also to fashion. Colors play a fundamental role in how people express their identity and communicate emotions through clothing, making them a key tool for design and creativity.</p>
+      </div>
+
+      <h4 style="margin-top:2rem">Palabras Clave / Keywords</h4>
+      <div class="kw-cloud">
+        <span class="tag">Moda</span>
+        <span class="tag rosa">Teoría del color</span>
+        <span class="tag">Vestimenta</span>
+        <span class="tag">Diseño</span>
+        <span class="tag rosa">Combinación cromática</span>
+        <span class="tag">Estilo</span>
+        <span class="tag rosa">Tendencias</span>
+        <span class="tag">Imagen personal</span>
+        <span class="tag">Creatividad</span>
+        <span class="tag rosa">Armonía visual</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     GALERÍA — Masonry principal
+══════════════════════════════════════════ -->
+<section id="galeria" style="padding:0 0 4rem;">
+  <div class="galeria-header">
+    <p class="section-kicker" data-i18n="gal_kicker">Momentos del evento</p>
+    <div class="section-divider" style="margin:0.75rem auto 1.25rem;"></div>
+    <h2 class="section-title" data-i18n="gal_title">Galería</h2>
+    <p class="section-sub" style="margin:0 auto;" data-i18n="gal_sub">Imágenes de la pasarela, talleres, conferencias y puestos de moda del evento Teoría del Color y el Significado — Universidad ECCI, Mayo 2026.</p>
+  </div>
+
+  <div class="galeria-masonry observe">
+    <div class="g-item" data-lb-src="/IMG/armonia_color.png" data-lb-cap="Armonía de Color" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/armonia_color.png" alt="Armonía de Color" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g1">Armonía de Color</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/circulo_cromatico.png" data-lb-cap="Círculo Cromático" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/circulo_cromatico.png" alt="Círculo Cromático" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g2">Círculo Cromático</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/contraste01.png" data-lb-cap="Taller de Color" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/contraste01.png" alt="Taller de Color" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g3">Taller de Color</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/creative_color.png" data-lb-cap="Color Creativo" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/creative_color.png" alt="Color Creativo" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g4">Color Creativo</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/experiencia.png" data-lb-cap="Experiencia ECCI" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/experiencia.png" alt="Experiencia ECCI" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g5">Experiencia ECCI</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/lenguaje_color.png" data-lb-cap="Lenguaje del Color" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/lenguaje_color.png" alt="Lenguaje del Color" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g6">Lenguaje del Color</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/moda.png" data-lb-cap="Moda ECCI" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/moda.png" alt="Moda ECCI" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g7">Moda ECCI</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/nohaysignificado.png" data-lb-cap="No hay Significado" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/nohaysignificado.png" alt="No hay Significado" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g8">No hay Significado</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/olor.png" data-lb-cap="Color y Sensación" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/olor.png" alt="Color y Sensación" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g9">Color y Sensación</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/pelicolor.png" data-lb-cap="Película y Color" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/pelicolor.png" alt="Película y Color" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g10">Película y Color</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/psycologia_color.png" data-lb-cap="Psicología del Color" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/psycologia_color.png" alt="Psicología del Color" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g11">Psicología del Color</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/puestoModa.png" data-lb-cap="Puesto de Moda" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/puestoModa.png" alt="Puesto de Moda" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g12">Puesto de Moda</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/que_quiero_decir.png" data-lb-cap="¿Qué Quiero Decir?" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/que_quiero_decir.png" alt="¿Qué Quiero Decir?" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g13">¿Qué Quiero Decir?</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/significado.png" data-lb-cap="Significado del Color" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/significado.png" alt="Significado del Color" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g14">Significado del Color</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/tecnica.png" data-lb-cap="Técnica de Color" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/tecnica.png" alt="Técnica de Color" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g15">Técnica de Color</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/tinte.png" data-lb-cap="Tinte" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/tinte.png" alt="Tinte" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g16">Tinte</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/todo_funciona.png" data-lb-cap="Todo Funciona" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/todo_funciona.png" alt="Todo Funciona" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g17">Todo Funciona</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/tono.png" data-lb-cap="Tono" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/tono.png" alt="Tono" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g18">Tono</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/contraste.png" data-lb-cap="Contraste" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/contraste.png" alt="Contraste" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g19">Contraste</span></div>
+    </div>
+    <div class="g-item" data-lb-src="/IMG/combinacion.jpeg" data-lb-cap="Combinación" onclick="abrirLb(this._lbIdx)">
+      <img src="/IMG/combinacion.jpeg" alt="Combinación" />
+      <div class="g-overlay"><span class="g-overlay-txt" data-i18n="g20">Combinación</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="if(event.target===this)cerrarLb()">
+  <button class="lb-close" onclick="cerrarLb()">✕</button>
+  <button class="lb-nav lb-prev" onclick="lbPrev()">‹</button>
+  <img id="lb-img" class="lightbox-img" src="" alt="Galería ECCI" onclick="event.stopPropagation()" />
+  <button class="lb-nav lb-next" onclick="lbNext()">›</button>
+  <div class="lb-caption" id="lb-cap"></div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     GLOSARIO
+══════════════════════════════════════════ -->
+<section id="glosario" class="bg3">
+  <p class="section-kicker observe" data-i18n="glos_kicker">Vocabulario técnico</p>
+  <div class="section-divider observe"></div>
+  <h2 class="section-title observe" data-i18n="glos_title">Glosario</h2>
+
+  <div class="gloss-search observe">
+    <input type="text" id="glossSearch" placeholder="Buscar término..."
+      data-i18n-ph="glos_search" oninput="filtrarGlos()" autocomplete="off" />
+  </div>
+
+  <div style="overflow-x:auto;" class="observe">
+    <table class="gloss-table" id="glossTable">
+      <thead>
+        <tr>
+          <th data-i18n="glos_col_en">English</th>
+          <th data-i18n="glos_col_es">Español</th>
+          <th data-i18n="glos_col_def">Definición</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="gloss-row"><td><span class="w-en">Hue</span></td><td><span class="w-es">Tono / Matiz</span></td><td class="w-def" data-i18n="d_hue">Tono puro de un color en la rueda cromática.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Saturation</span></td><td><span class="w-es">Saturación</span></td><td class="w-def" data-i18n="d_saturation">Intensidad o pureza de un color.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Value / Lightness</span></td><td><span class="w-es">Valor / Luminosidad</span></td><td class="w-def" data-i18n="d_value">Cantidad de luz que refleja un color, del negro al blanco.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Contrast</span></td><td><span class="w-es">Contraste</span></td><td class="w-def" data-i18n="d_contrast">Diferencia perceptual entre dos colores adyacentes. Clave para accesibilidad WCAG.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Color Palette</span></td><td><span class="w-es">Paleta de color</span></td><td class="w-def" data-i18n="d_palette">Conjunto de colores seleccionados con coherencia visual y semántica.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Color Wheel</span></td><td><span class="w-es">Rueda cromática</span></td><td class="w-def" data-i18n="d_colorwheel">Representación circular de los colores del espectro visible.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Primary Colors</span></td><td><span class="w-es">Colores primarios</span></td><td class="w-def" data-i18n="d_primary">Colores que no se obtienen mezclando otros: rojo, azul y amarillo en pigmento; RGB en luz.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Secondary Colors</span></td><td><span class="w-es">Colores secundarios</span></td><td class="w-def" data-i18n="d_secondary">Colores resultantes de mezclar dos primarios: naranja, verde y violeta.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Analogous Colors</span></td><td><span class="w-es">Colores análogos</span></td><td class="w-def" data-i18n="d_analogous">Colores adyacentes en la rueda cromática. Producen armonías visuales suaves.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Complementary Colors</span></td><td><span class="w-es">Colores complementarios</span></td><td class="w-def" data-i18n="d_complement">Par de colores opuestos en la rueda cromática. Generan el máximo contraste visual.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Triadic Scheme</span></td><td><span class="w-es">Esquema triádico</span></td><td class="w-def" data-i18n="d_triadic">Tres colores equidistantes en la rueda cromática con alto contraste y equilibrio.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Tint</span></td><td><span class="w-es">Tinte</span></td><td class="w-def" data-i18n="d_tint">Color más claro obtenido al añadir blanco a un matiz puro.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Shade</span></td><td><span class="w-es">Sombra cromática</span></td><td class="w-def" data-i18n="d_shade">Color más oscuro obtenido al añadir negro a un matiz puro.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Tone</span></td><td><span class="w-es">Tono grisado</span></td><td class="w-def" data-i18n="d_tone">Variación de un color obtenida añadiendo gris. Produce colores desaturados y sofisticados.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Warm Colors</span></td><td><span class="w-es">Colores cálidos</span></td><td class="w-def" data-i18n="d_warm">Rojos, naranjas y amarillos. Evocan calor y energía; avanzan visualmente.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Cool Colors</span></td><td><span class="w-es">Colores fríos</span></td><td class="w-def" data-i18n="d_cool">Azules, verdes y violetas. Transmiten calma y distancia; retroceden visualmente.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Neutral Colors</span></td><td><span class="w-es">Colores neutros</span></td><td class="w-def" data-i18n="d_neutral">Blanco, negro y grises. Usados como base o soporte en composiciones cromáticas.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Gradient</span></td><td><span class="w-es">Degradado</span></td><td class="w-def" data-i18n="d_gradient">Transición gradual entre dos o más colores. Fundamental en UI moderna.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Opacity</span></td><td><span class="w-es">Opacidad</span></td><td class="w-def" data-i18n="d_opacity">Nivel de transparencia de un color o elemento visual.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">HEX Code</span></td><td><span class="w-es">Código hexadecimal</span></td><td class="w-def" data-i18n="d_hex">Código de 6 caracteres (#RRGGBB) que identifica un color exacto en sistemas digitales.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">RGB</span></td><td><span class="w-es">RGB (Rojo, Verde, Azul)</span></td><td class="w-def" data-i18n="d_rgb">Modelo de color aditivo usado en pantallas. Los tres canales combinados producen cualquier color visible.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">CMYK</span></td><td><span class="w-es">CMYK (Cian, Magenta, Amarillo, Negro)</span></td><td class="w-def" data-i18n="d_cmyk">Modelo de color sustractivo usado en impresión física.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">HSL</span></td><td><span class="w-es">HSL (Tono, Saturación, Luminosidad)</span></td><td class="w-def" data-i18n="d_hsl">Modelo de color más intuitivo para diseñadores que RGB.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Color Meaning</span></td><td><span class="w-es">Significado del color</span></td><td class="w-def" data-i18n="d_meaning">Asociación cultural, emocional y simbólica que un color comunica al observador.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Color Token</span></td><td><span class="w-es">Variable de color</span></td><td class="w-def" data-i18n="d_tokencolor">Variable de diseño que almacena un color con nombre semántico para sistemas escalables.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Moodboard</span></td><td><span class="w-es">Tablero de referencia visual</span></td><td class="w-def" data-i18n="d_moodboard">Tablero que agrupa imágenes, colores y tipografías para comunicar la dirección estética.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Color Story</span></td><td><span class="w-es">Narrativa cromática</span></td><td class="w-def" data-i18n="d_colorstory">Historia que los colores de una colección o campaña cuentan sobre emociones y valores.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Pantone</span></td><td><span class="w-es">Sistema Pantone</span></td><td class="w-def" data-i18n="d_pantone">Sistema estandarizado de identificación de colores para impresión, textiles y plásticos.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Color Blindness</span></td><td><span class="w-es">Daltonismo</span></td><td class="w-def" data-i18n="d_colorblind">Condición que afecta la percepción de colores. El diseño accesible garantiza usabilidad para estas personas.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Fashion Stall</span></td><td><span class="w-es">Puesto de moda</span></td><td class="w-def" data-i18n="d_stall">Espacio de exhibición y venta donde una marca o colección presenta sus prendas al público del evento.</td></tr>
+        <tr class="gloss-row"><td><span class="w-en">Brand Identity</span></td><td><span class="w-es">Identidad de marca</span></td><td class="w-def" data-i18n="d_brand">Conjunto de elementos visuales, incluido el color, que distinguen y comunican los valores de una marca.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONCLUSIÓN
+══════════════════════════════════════════ -->
+<section id="conclusion" class="bg2">
+  <p class="section-kicker observe" data-i18n="concl_kicker">Reflexión final</p>
+  <div class="section-divider observe"></div>
+  <h2 class="section-title observe" data-i18n="concl_title">Conclusión</h2>
+
+  <!-- ES -->
+  <div class="lang-content activo observe conclusion-tabs-scope" data-lang="concl-es">
+    <div class="concl-block">
+      <h3 class="concl-q" data-i18n="concl_q">¿Cómo el color construye experiencias y significados responsables?</h3>
+      <p class="concl-main" data-i18n="concl_main">El evento «Teoría del color y significado», celebrado en la Universidad ECCI, reveló una verdad que va más allá de las paletas de colores y los códigos hexadecimales: el color es el lenguaje principal de toda experiencia de marca y, al igual que todos los lenguajes, puede incluir o excluir. Diseñar con color significa diseñar de forma responsable.</p>
+      <p class="concl-sec" data-i18n="concl_p1">La conferencia «Color y significado» reveló que detrás de cada elección de color que realiza una marca de moda se esconde una asociación simbólica y emocional: confianza, lujo, energía o tranquilidad. Un buen diseño no elige el color que «queda bonito», sino el que transmite el mensaje adecuado al público adecuado.</p>
+      <p class="concl-sec" data-i18n="concl_p2">La charla «Puestos de moda» demostró que la teoría del color no solo se aplica al diseño gráfico o a la publicidad, sino también a la ropa y la moda. Los colores son fundamentales para que las personas expresen su identidad y transmitan emociones a través de su vestimenta.</p>
+
+      <div class="ethics-grid observe">
+        <div class="ethics-card"><h4 data-i18n="e1_title">Accesibilidad Cromática</h4><p data-i18n="e1_desc">Diseñar con contrastes WCAG no es restricción: es garantizar que la experiencia llega a todos, incluidos los 300 millones de personas con daltonismo en el mundo.</p></div>
+        <div class="ethics-card"><h4 data-i18n="e2_title">Significado y Honestidad de Marca</h4><p data-i18n="e2_desc">El color comunica promesas. Usar un significado cromático que no corresponde con los valores reales de una marca es una forma de engaño visual.</p></div>
+        <div class="ethics-card"><h4 data-i18n="e3_title">Color & Diversidad</h4><p data-i18n="e3_desc">Los sistemas de color deben reflejar la diversidad humana. Una paleta de tonos de piel que solo contempla tres variantes excluye a la mayoría del mundo.</p></div>
+        <div class="ethics-card"><h4 data-i18n="e4_title">Sostenibilidad Visual</h4><p data-i18n="e4_desc">El color en pantalla consume energía: los modos oscuros en OLED son un 30–60% más eficientes. El diseñador responsable considera el impacto ambiental de sus decisiones.</p></div>
+        <div class="ethics-card"><h4 data-i18n="e5_title">Identidad Cultural</h4><p data-i18n="e5_desc">El color tiene significados culturales radicalmente distintos. Diseñar para audiencias globales exige investigación cultural, no solo estética.</p></div>
+      </div>
+
+      <div class="quote-block observe">
+        <p data-i18n="quote_es">"Teoría del Color y el Significado no fue una clase de historia del arte. Fue la comprensión de que cada color que elegimos para una marca, una prenda o un puesto de moda lleva un mensaje hacia quien lo va a ver. Esa responsabilidad es el fundamento de todo buen diseño."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- EN -->
+  <div class="lang-content conclusion-tabs-scope" data-lang="concl-en">
+    <div class="concl-block">
+      <h3 class="concl-q">How does color build responsible experiences and meaning?</h3>
+      <p class="concl-main" data-i18n="concl_main_en">The “Color Theory and Meaning” event at ECCI University revealed a truth that goes beyond color palettes and hex codes: color is the primary language of every brand experience, and like all languages, it can include or exclude. Designing with color means designing responsibly.</p>
+      <p class="concl-sec" data-i18n="concl_p1_en">The “Color and Meaning” conference revealed that behind every color choice made by a fashion brand lies a symbolic and emotional association: trust, luxury, energy, or calm. Good design does not choose the color that “looks pretty”; it chooses the color that communicates the right message to the right audience.</p>
+      <p class="concl-sec" data-i18n="concl_p2_en">The “Fashion Stalls” talk demonstrated that color theory applies not only to graphic design or advertising, but also to clothing and fashion. Colors are key to how people express their identity and communicate emotions through their clothing.</p>
+
+      <div class="ethics-grid">
+        <div class="ethics-card"><h4>Chromatic Accessibility</h4><p>Designing with WCAG-compliant contrast guarantees the experience reaches all users, including 300 million color-blind people worldwide.</p></div>
+        <div class="ethics-card"><h4>Meaning and Brand Honesty</h4><p>Color communicates promises. Using a chromatic meaning that doesn't match a brand's real values is a form of visual deception.</p></div>
+        <div class="ethics-card"><h4>Color & Diversity</h4><p>Color systems must reflect human diversity. A skin tone palette with only three variants excludes the majority of the world.</p></div>
+        <div class="ethics-card"><h4>Visual Sustainability</h4><p>On-screen color consumes energy: dark modes on OLED screens are 30–60% more efficient. Responsible designers consider the environmental impact of their chromatic choices.</p></div>
+        <div class="ethics-card"><h4>Cultural Identity</h4><p>Color carries radically different cultural meanings. Designing for global audiences demands cultural research, not just aesthetics.</p></div>
+      </div>
+
+      <div class="quote-block">
+        <p>"Color Theory and Meaning was not an art history class. It was the understanding that every color we choose for a brand, a garment or a fashion stall carries a message toward whoever will see it. That responsibility is the foundation of all good design."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-logo">Teoría <span>del Color</span></div>
+  <div class="footer-sub">EVENTO DE MODA — COLOR Y SIGNIFICADO</div>
+  <div class="footer-linea"></div>
+  <p class="footer-copy" data-i18n="footer_copy">© 2026 Teoría del Color y el Significado · Universidad ECCI · Evento de Moda · Bogotá, Colombia · Jean Carlos Alejandro Araujo Pacheco</p>
+</footer>
+
+<button id="back-top" aria-label="Volver arriba">↑</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="JS/script.js"></script>
+</body>
+</html>
